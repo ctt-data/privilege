@@ -32,29 +32,14 @@ $(".button-next").click(function() {
   $(".button-yes").attr("disabled", false);
   $(".button-no").attr("disabled", false);
 
-  // end of survey.Display of result
-  if (count > questions.length) {
-    // show result
+    // show result-w.i.p-
     $(".result").show();
     $("#scoreYes").text(scoreYes);
     $("#scoreNo").text(scoreNo);
     $("#scoreYes").width(scoreYes * 50 + "px");
     $("#scoreNo").width(scoreNo * 50 + "px");
     $(".button-yes, .button-no, .question, score").hide();
-    // how many yes?
-    $(".messageAboutPrivilege").show();
     
-    if (scoreYes > 6) {
-      $(".messageAboutPrivilege").text(messageAboutPrivilege[0]);
-    } else if (scoreYes < 4) {
-      $(".messageAboutPrivilege").text(messageAboutPrivilege[2]);
-    } else {
-      $(".messageAboutPrivilege").text(messageAboutPrivilege[1]);
-    }
-  } else {
-    $(".question").text(questions[count]);
-  }
-});
 
 var questions = [
   "Is English your first language?",
@@ -79,7 +64,5 @@ var noNotes= [
   "no note 5- text goes here",
  
 ];
-
-var messageAboutPrivilege = ["white p", "don't know", "under P"];
 
 $(".question").text(questions[0]);
