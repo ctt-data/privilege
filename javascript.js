@@ -20,7 +20,7 @@ $(".button-yes, .button-no").click(function(){
     // show result
     $("#scoreYes").text(scoreYes);
     $("#scoreNo").text(scoreNo);
-    $(".button-yes, .button-no").hide();
+    $(".button-yes, .button-no, .question").hide();
   }else {
   $(".question").text(questions[count]);
   }
