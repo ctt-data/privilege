@@ -1,6 +1,30 @@
-h1 {
-	color: #CCC;
+.container {
+  background: #f0f0f5;
+  padding-top: 10px;
+  padding-left:20px;
+  height: 300px;
+  width: auto;
 }
-.invisible{
-  display:none;
+.result,
+.paragraphboxYes,
+.paragraphboxNo,
+.messageAboutPrivilege,
+.button-next,
+.notes {
+  display: none;
+}
+
+#scoreYes {
+  color: #000;
+  margin: ;
+  background: #00bcd4;
+}
+
+#scoreNo {
+  margin: ;
+  background: #3399ff;
+}
+
+.button-yes-no--selected {
+  border: 3px solid blue;
 }
