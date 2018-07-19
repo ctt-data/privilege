@@ -1,3 +1,7 @@
+
+$( document ).ready(function() {
+	// All your code goes here
+
 var Yes 
 $(".button-yes").click(function() {
   $(".button-yes").addClass("button-yes-no--selected");
