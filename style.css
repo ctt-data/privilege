@@ -1,9 +1,16 @@
+body {
+  font-family: Helvetica, arial, sans-serif;
+}
 .container {
   background: #f0f0f5;
-  padding-top: 10px;
-  padding-left:20px;
-  height: 300px;
-  width: auto;
+  padding: 20px;
+  width: 50vw;
+  min-height:320px;
+  margin: 0 auto;
+}
+.notes {
+  padding: 20px;
+  background: lightblue;
 }
 .result,
 .paragraphboxYes,
@@ -13,16 +20,20 @@
 .notes {
   display: none;
 }
-
-#scoreYes {
-  color: #000;
-  margin: ;
-  background: #00bcd4;
+button {
+  padding: 5px 10px;
+  min-width: 80px;
+  background: white;
+  border: none;
 }
-
-#scoreNo {
-  margin: ;
-  background: #3399ff;
+button:hover {
+  cursor: pointer;
+}
+button.button-yes:hover {
+  background: green;
+}
+button.button-no:hover {
+  background: red;
 }
 
 .button-yes-no--selected {
