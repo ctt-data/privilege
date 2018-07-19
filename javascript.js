@@ -31,10 +31,7 @@ $(".button-next").click(function() {
   // end of survey
   if (count > questions.length) {
     // show result
-    $(".result").show();
-    $("#Yes").text(Yes);
-    $("#No").text(No);
-   
+    $(".result").show();   
     $(".button-yes, .button-no, .question").hide();
 
    
