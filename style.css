@@ -9,6 +9,9 @@ body {
   margin: 0 auto;
 }
 .notes {
+  border-style:double;
+  border-color: white;
+  border-radius:5px;
   padding: 20px;
   background: lightblue;
 }
@@ -21,10 +24,14 @@ body {
   display: none;
 }
 button {
+  font-size: 50px;
   padding: 5px 10px;
-  min-width: 80px;
+  min-width: 192px;
+  min-height:150px;
   background: white;
   border: none;
+  border-radius: 10px;
+  margin:5px 0px 10px 0px;
 }
 button:hover {
   cursor: pointer;
@@ -35,7 +42,15 @@ button.button-yes:hover {
 button.button-no:hover {
   background: red;
 }
+#scoreYes {
+  color: #000;
+  background: #00bcd4;
+}
+
+#scoreNo {
+  background: #3399ff;
+}
 
 .button-yes-no--selected {
-  border: 3px solid blue;
+  border: 3px solid lightblue;
 }
