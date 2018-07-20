@@ -1,34 +1,54 @@
+
+img{
+  width:100%;
+}
 body {
   font-family: Helvetica, arial, sans-serif;
 }
-.container {
+
+h1{
+  color:#8d7d78;
+  background:#fff;
+  position:absolute;
   text-align:center;
+  margin-left: auto;
+}
+ 
+.container {
+  text-align: center;
   background: #f0f0f5;
   padding: 20px;
-  width: 50vw;
-  min-height:320px;
-  margin: 0 auto;
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+  width: 80vw;
+  min-height: 320px;
+  margin: 0px auto;
+  margin-top:50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-h1{
-   color:#8d7d78;
-  
-}
-.question{
-  background:#8d7d78;
-  padding:10px;
+.intro{
   border-style:double;
   border-width:10px;
+  border-color:#fff;
+  color:grey;
+  padding:20px;
+  width:auto;
   border-radius:5px;
-  color:#fff;
-  font-size:25px;
+}
+
+.question {
+  background: #8d7d78;
+  padding: 10px;
+  border-style: double;
+  border-width: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
 }
 .notes {
-  color:#fff;
-  border-style:double;
+  color: #fff;
+  border-style: double;
   border-color: white;
-  border-width:10px;
-  border-radius:5px;
+  border-width: 10px;
+  border-radius: 5px;
   padding: 20px;
   background: #8aa9d8;
 }
@@ -40,58 +60,59 @@ h1{
   display: none;
 }
 
-.button-yes{
-  color:#47d147;
+.button-yes {
+  color: #47d147;
 }
-.button-no{
-  color:red;
+.button-no {
+  color: red;
 }
-.button-next{
-  color:#d7a8b2;
+.button-next {
+  color: #d7a8b2;
 }
 button {
   font-size: 50px;
   padding: 5px 10px;
   min-width: 192px;
-  min-height:150px;
+  min-height: 150px;
   background: white;
   border: none;
   border-radius: 10px;
-  margin:5px 0px 10px 0px;
+  margin: 5px 0px 10px 0px;
 }
 button:hover {
   cursor: pointer;
 }
 button.button-yes:hover {
   background: #47d147;
-  color:white;
+  color: white;
 }
 
 button.button-no:hover {
   background: red;
-  color:white;
+  color: white;
 }
 
 button.button-next:hover {
   background: #d7a8b2;
-  color:white;
+  color: white;
 }
 
 .button-yes-no--selected {
   border: 3px solid lightblue;
-  
 }
 
 .button-yes-no--disabled:hover {
-    background: white !important;
+  background: white !important;
 }
 .button-yes.button-yes-no--disabled:hover {
-  color:#47d147;
+  color: #47d147;
 }
 .button-no.button-yes-no--disabled:hover {
-  color:red;
+  color: red;
 }
 
-.end{
-  background:#666666;
+.end {
+  color: #fff;
+  background: #666666;
+  padding: 10px;
 }
