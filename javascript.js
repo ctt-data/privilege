@@ -1,7 +1,6 @@
 $(document).ready(function() {
     // All your code goes here
-
-  var Yes;
+var Yes;
 $(".button-yes").click(function() {
   $(".button-yes").addClass("button-yes-no--selected");
   $(".button-no, .button-yes").addClass("button-yes-no--disabled");
@@ -204,4 +203,4 @@ var noNotes = [
 
 $(".question").text(questions[0]);
 
-
+});
