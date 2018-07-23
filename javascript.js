@@ -99,3 +99,4 @@ $(document).ready(function() {
             ];
 
             $(".question").text(questions[0]);
+            });
