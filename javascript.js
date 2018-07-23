@@ -3,7 +3,6 @@ $(document).ready(function() {
 var Yes;
 $(".button-yes").click(function() {
   $(".button-yes").addClass("button-yes-no--selected");
-  $(".button-no, .button-yes").addClass("button-yes-no--disabled");
   $(".button-yes").attr("disabled", true);
   $(".button-no").attr("disabled", true);
   $(".notes").text(yesNotes[count]);
@@ -12,26 +11,13 @@ $(".button-yes").click(function() {
 });
 var No;
 $(".button-no").click(function() {
-  var Yes;
-  $(".button-yes").click(function() {
-    $(".button-yes").addClass("button-yes-no--selected");
-    $(".button-no, .button-yes").addClass("button-yes-no--disabled");
-    $(".button-yes").attr("disabled", true);
-    $(".button-no").attr("disabled", true);
-    $(".notes").text(yesNotes[count]);
-    $(".notes").show();
-    $(".button-next").show();
-  });
-  var No;
-  $(".button-no").click(function() {
-    $(".button-no").addClass("button-yes-no--selected");
-    $(".button-no, .button-yes").addClass("button-yes-no--disabled");
-    $(".button-yes").attr("disabled", true);
-    $(".button-no").attr("disabled", true);
-    $(".notes").text(noNotes[count]);
-    $(".notes").show();
-    $(".button-next").show();
-  });
+  $(".button-no").addClass("button-yes-no--selected");
+  $(".button-yes").attr("disabled", true);
+  $(".button-no").attr("disabled", true);
+  $(".notes").text(noNotes[count]);
+  $(".notes").show();
+  $(".button-next").show();
+});
 
   var count = 0;
   $(".button-next").click(function() {
@@ -113,3 +99,4 @@ $(".button-no").click(function() {
   ];
 
   $(".question").text(questions[0]);
+ 
